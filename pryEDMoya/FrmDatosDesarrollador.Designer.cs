@@ -31,9 +31,9 @@
             this.lblDni = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtNombreCompleto = new System.Windows.Forms.TextBox();
+            this.txtMateria = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,26 +65,26 @@
             this.lblMateria.TabIndex = 2;
             this.lblMateria.Text = "Materia";
             // 
-            // textBox1
+            // txtDNI
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 299);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtDNI.Location = new System.Drawing.Point(150, 299);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(117, 20);
+            this.txtDNI.TabIndex = 3;
             // 
-            // textBox2
+            // txtNombreCompleto
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 337);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtNombreCompleto.Location = new System.Drawing.Point(150, 337);
+            this.txtNombreCompleto.Name = "txtNombreCompleto";
+            this.txtNombreCompleto.Size = new System.Drawing.Size(116, 20);
+            this.txtNombreCompleto.TabIndex = 4;
             // 
-            // textBox3
+            // txtMateria
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 373);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(116, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtMateria.Location = new System.Drawing.Point(150, 373);
+            this.txtMateria.Name = "txtMateria";
+            this.txtMateria.Size = new System.Drawing.Size(116, 20);
+            this.txtMateria.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -101,9 +101,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMateria);
+            this.Controls.Add(this.txtNombreCompleto);
+            this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblDni);
@@ -121,9 +121,9 @@
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblMateria;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtNombreCompleto;
+        private System.Windows.Forms.TextBox txtMateria;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

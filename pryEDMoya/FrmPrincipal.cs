@@ -21,5 +21,18 @@ namespace pryEDMoya
         {
 
         }
+
+        private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDatosDesarrollador v = new FrmDatosDesarrollador();
+            v.ShowDialog();
+
+        }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cola v = new Cola();
+            v.ShowDialog();
+        }
     }
 }
