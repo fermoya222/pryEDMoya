@@ -31,7 +31,13 @@ namespace pryEDMoya
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Cola v = new Cola();
+            frmCola v = new frmCola();
+            v.ShowDialog();
+        }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila v = new frmPila();
             v.ShowDialog();
         }
     }

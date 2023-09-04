@@ -1,6 +1,6 @@
 ﻿namespace pryEDMoya
 {
-    partial class Cola
+    partial class frmCola
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mcrNuevoElemento = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.mrcElementoEliminado = new System.Windows.Forms.GroupBox();
@@ -51,21 +50,13 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Trámite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstCola = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mcrNuevoElemento.SuspendLayout();
             this.mrcElementoEliminado.SuspendLayout();
             this.mrcListadoLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::pryEDMoya.Properties.Resources.descarga_jpg_repres;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(224, 225);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // mcrNuevoElemento
             // 
@@ -73,10 +64,10 @@
             this.mcrNuevoElemento.Controls.Add(this.txtTramite);
             this.mcrNuevoElemento.Controls.Add(this.txtNombre);
             this.mcrNuevoElemento.Controls.Add(this.txtCodigo);
-            this.mcrNuevoElemento.Controls.Add(this.label1);
+            this.mcrNuevoElemento.Controls.Add(this.lblTramite);
             this.mcrNuevoElemento.Controls.Add(this.lblNombre);
             this.mcrNuevoElemento.Controls.Add(this.lblCodigo);
-            this.mcrNuevoElemento.Location = new System.Drawing.Point(249, 14);
+            this.mcrNuevoElemento.Location = new System.Drawing.Point(244, 12);
             this.mcrNuevoElemento.Name = "mcrNuevoElemento";
             this.mcrNuevoElemento.Size = new System.Drawing.Size(217, 222);
             this.mcrNuevoElemento.TabIndex = 1;
@@ -114,14 +105,14 @@
             this.txtCodigo.Size = new System.Drawing.Size(75, 20);
             this.txtCodigo.TabIndex = 3;
             // 
-            // label1
+            // lblTramite
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Trámite:";
+            this.lblTramite.AutoSize = true;
+            this.lblTramite.Location = new System.Drawing.Point(14, 121);
+            this.lblTramite.Name = "lblTramite";
+            this.lblTramite.Size = new System.Drawing.Size(45, 13);
+            this.lblTramite.TabIndex = 2;
+            this.lblTramite.Text = "Trámite:";
             // 
             // lblNombre
             // 
@@ -150,7 +141,7 @@
             this.mrcElementoEliminado.Controls.Add(this.lblTramite2);
             this.mrcElementoEliminado.Controls.Add(this.lblNombre2);
             this.mrcElementoEliminado.Controls.Add(this.lblCodigo2);
-            this.mrcElementoEliminado.Location = new System.Drawing.Point(489, 14);
+            this.mrcElementoEliminado.Location = new System.Drawing.Point(484, 12);
             this.mrcElementoEliminado.Name = "mrcElementoEliminado";
             this.mrcElementoEliminado.Size = new System.Drawing.Size(234, 221);
             this.mrcElementoEliminado.TabIndex = 2;
@@ -227,7 +218,7 @@
             // 
             this.mrcListadoLista.Controls.Add(this.dgvCola);
             this.mrcListadoLista.Controls.Add(this.lstCola);
-            this.mrcListadoLista.Location = new System.Drawing.Point(12, 255);
+            this.mrcListadoLista.Location = new System.Drawing.Point(7, 253);
             this.mrcListadoLista.Name = "mrcListadoLista";
             this.mrcListadoLista.Size = new System.Drawing.Size(710, 191);
             this.mrcListadoLista.TabIndex = 3;
@@ -269,25 +260,34 @@
             this.lstCola.Size = new System.Drawing.Size(200, 160);
             this.lstCola.TabIndex = 0;
             // 
-            // Cola
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::pryEDMoya.Properties.Resources.descarga_jpg_repres;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(224, 225);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // frmCola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(728, 450);
             this.Controls.Add(this.mrcListadoLista);
             this.Controls.Add(this.mrcElementoEliminado);
             this.Controls.Add(this.mcrNuevoElemento);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Cola";
+            this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinamicano Lineal - Cola";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.mcrNuevoElemento.ResumeLayout(false);
             this.mcrNuevoElemento.PerformLayout();
             this.mrcElementoEliminado.ResumeLayout(false);
             this.mrcElementoEliminado.PerformLayout();
             this.mrcListadoLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,7 +300,7 @@
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.GroupBox mrcElementoEliminado;

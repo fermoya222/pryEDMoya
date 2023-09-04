@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace pryEDMoya
 {
-    public partial class Cola : Form
+    public partial class frmCola : Form
     {
         clsCola FiladePersonas = new clsCola();
-        public Cola()
+        public frmCola()
         {
             InitializeComponent();
         }

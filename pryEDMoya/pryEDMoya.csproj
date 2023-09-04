@@ -48,17 +48,24 @@
   <ItemGroup>
     <Compile Include="clsCola.cs" />
     <Compile Include="clsNodo.cs" />
-    <Compile Include="Cola.cs">
+    <Compile Include="clsPila.cs" />
+    <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cola.Designer.cs">
-      <DependentUpon>Cola.cs</DependentUpon>
+    <Compile Include="frmCola.Designer.cs">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDatosDesarrollador.Designer.cs">
       <DependentUpon>FrmDatosDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPila.Designer.cs">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -68,11 +75,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cola.resx">
-      <DependentUpon>Cola.cs</DependentUpon>
+    <EmbeddedResource Include="frmCola.resx">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDatosDesarrollador.resx">
       <DependentUpon>FrmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPila.resx">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
@@ -114,6 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga.jpg repres.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pilas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pilas en c++.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
