@@ -63,6 +63,16 @@ namespace pryEDMoya.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap descarga_jpg_foto {
             get {
                 object obj = ResourceManager.GetObject("descarga.jpg foto", resourceCulture);
@@ -106,6 +116,16 @@ namespace pryEDMoya.Properties {
         internal static System.Drawing.Bitmap fondos_de_pantalla_color_azul_abstract_wallpaper_preview {
             get {
                 object obj = ResourceManager.GetObject("fondos-de-pantalla-color-azul-abstract-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insercion {
+            get {
+                object obj = ResourceManager.GetObject("insercion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

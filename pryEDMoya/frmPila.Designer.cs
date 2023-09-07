@@ -281,6 +281,7 @@
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPila";
+            this.Load += new System.EventHandler(this.frmPila_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvColaP)).EndInit();
             this.mrcListadoListaP.ResumeLayout(false);
             this.mrcElementoEliminadoP.ResumeLayout(false);

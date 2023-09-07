@@ -62,5 +62,10 @@ namespace pryEDMoya
                 lblTramiteE.Text = "";
             }
         }
+
+        private void frmCola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,5 +40,12 @@ namespace pryEDMoya
             frmPila v = new frmPila();
             v.ShowDialog();
         }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple v = new frmListaSimple();
+            v.ShowDialog();
+
+        }
     }
 }

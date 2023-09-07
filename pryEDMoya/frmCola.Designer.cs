@@ -281,6 +281,7 @@
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinamicano Lineal - Cola";
+            this.Load += new System.EventHandler(this.frmCola_Load);
             this.mcrNuevoElemento.ResumeLayout(false);
             this.mcrNuevoElemento.PerformLayout();
             this.mrcElementoEliminado.ResumeLayout(false);

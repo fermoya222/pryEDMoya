@@ -53,5 +53,10 @@ namespace pryEDMoya
                 lblTramiteEP.Text = "";
             }
         }
+
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
