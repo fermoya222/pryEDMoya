@@ -44,8 +44,8 @@
             this.txtCodigoLS = new System.Windows.Forms.TextBox();
             this.lblTramiteLS = new System.Windows.Forms.Label();
             this.mrcElementoEliminadoLS = new System.Windows.Forms.GroupBox();
-            this.mcrNuevoElementoLS = new System.Windows.Forms.GroupBox();
             this.cmbCodigoLS = new System.Windows.Forms.ComboBox();
+            this.mcrNuevoElementoLS = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvColaLS)).BeginInit();
             this.mrcListadoLista.SuspendLayout();
@@ -192,6 +192,17 @@
             this.mrcElementoEliminadoLS.TabStop = false;
             this.mrcElementoEliminadoLS.Text = "Elemento Eliminado";
             // 
+            // cmbCodigoLS
+            // 
+            this.cmbCodigoLS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCodigoLS.FormattingEnabled = true;
+            this.cmbCodigoLS.Location = new System.Drawing.Point(72, 121);
+            this.cmbCodigoLS.Name = "cmbCodigoLS";
+            this.cmbCodigoLS.Size = new System.Drawing.Size(121, 21);
+            this.cmbCodigoLS.TabIndex = 7;
+            this.cmbCodigoLS.SelectedIndexChanged += new System.EventHandler(this.cmbCodigoLS_SelectedIndexChanged);
+            this.cmbCodigoLS.Click += new System.EventHandler(this.cmbCodigoLS_Click);
+            // 
             // mcrNuevoElementoLS
             // 
             this.mcrNuevoElementoLS.Controls.Add(this.btnAgregarLS);
@@ -207,15 +218,6 @@
             this.mcrNuevoElementoLS.TabIndex = 5;
             this.mcrNuevoElementoLS.TabStop = false;
             this.mcrNuevoElementoLS.Text = "Nuevo Elemento";
-            // 
-            // cmbCodigoLS
-            // 
-            this.cmbCodigoLS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCodigoLS.FormattingEnabled = true;
-            this.cmbCodigoLS.Location = new System.Drawing.Point(72, 121);
-            this.cmbCodigoLS.Name = "cmbCodigoLS";
-            this.cmbCodigoLS.Size = new System.Drawing.Size(121, 21);
-            this.cmbCodigoLS.TabIndex = 7;
             // 
             // pictureBox1
             // 

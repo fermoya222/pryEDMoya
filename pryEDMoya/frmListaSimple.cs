@@ -58,7 +58,6 @@ namespace pryEDMoya
             {
                 MessageBox.Show("La lista esta vacia");
             }
-            btnEliminarLS.Enabled = false;
         }
 
         private void validardatos()
@@ -66,10 +65,12 @@ namespace pryEDMoya
             if (txtCodigoLS.Text != "" && txtNombreLS.Text != "" && txtTramiteLS.Text != "")
             {
                 btnAgregarLS.Enabled = true;
+                btnEliminarLS.Enabled = false;
             }
             else
             {
                 btnAgregarLS.Enabled=false;
+                btnEliminarLS.Enabled = false;
             }
         }
 
@@ -86,6 +87,30 @@ namespace pryEDMoya
         private void txtTramiteLS_TextChanged(object sender, EventArgs e)
         {
             validardatos();
+        }
+
+        private void cmbCodigoLS_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCodigoLS.Text == "")
+            {
+                btnEliminarLS.Enabled = false;
+            }
+            else
+            {
+                btnEliminarLS.Enabled = true;
+            }
+        }
+
+        private void cmbCodigoLS_Click(object sender, EventArgs e)
+        {
+            if (cmbCodigoLS.Text == "")
+            {
+                btnEliminarLS.Enabled = false;
+            }
+            else
+            {
+                btnEliminarLS.Enabled = true;
+            }
         }
     }
 }

@@ -48,8 +48,8 @@
             this.lblCodigoLD = new System.Windows.Forms.Label();
             this.pictureBoxLD = new System.Windows.Forms.PictureBox();
             this.cmdListarDatosLD = new System.Windows.Forms.GroupBox();
-            this.rbtnAscendente = new System.Windows.Forms.RadioButton();
             this.rbtnDescendente = new System.Windows.Forms.RadioButton();
+            this.rbtnAscendente = new System.Windows.Forms.RadioButton();
             this.mrcListadoLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
             this.mrcElementoAEliminarLD.SuspendLayout();
@@ -238,17 +238,6 @@
             this.cmdListarDatosLD.TabStop = false;
             this.cmdListarDatosLD.Text = "Listar Datos";
             // 
-            // rbtnAscendente
-            // 
-            this.rbtnAscendente.AutoSize = true;
-            this.rbtnAscendente.Location = new System.Drawing.Point(21, 27);
-            this.rbtnAscendente.Name = "rbtnAscendente";
-            this.rbtnAscendente.Size = new System.Drawing.Size(82, 17);
-            this.rbtnAscendente.TabIndex = 0;
-            this.rbtnAscendente.TabStop = true;
-            this.rbtnAscendente.Text = "Ascendente";
-            this.rbtnAscendente.UseVisualStyleBackColor = true;
-            // 
             // rbtnDescendente
             // 
             this.rbtnDescendente.AutoSize = true;
@@ -259,6 +248,17 @@
             this.rbtnDescendente.TabStop = true;
             this.rbtnDescendente.Text = "Descendente";
             this.rbtnDescendente.UseVisualStyleBackColor = true;
+            // 
+            // rbtnAscendente
+            // 
+            this.rbtnAscendente.AutoSize = true;
+            this.rbtnAscendente.Location = new System.Drawing.Point(21, 27);
+            this.rbtnAscendente.Name = "rbtnAscendente";
+            this.rbtnAscendente.Size = new System.Drawing.Size(82, 17);
+            this.rbtnAscendente.TabIndex = 0;
+            this.rbtnAscendente.TabStop = true;
+            this.rbtnAscendente.Text = "Ascendente";
+            this.rbtnAscendente.UseVisualStyleBackColor = true;
             // 
             // frmListaDoble
             // 
@@ -273,6 +273,7 @@
             this.Name = "frmListaDoble";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListaDoble";
+            this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.mrcListadoLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();
             this.mrcElementoAEliminarLD.ResumeLayout(false);

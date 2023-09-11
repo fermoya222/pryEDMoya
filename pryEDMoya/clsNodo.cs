@@ -12,8 +12,10 @@ namespace pryEDMoya
         private Int32 cod; 
         private String nom; 
         private String tra;
+        
 
         private clsNodo sig;
+        private clsNodo ant;
 
 
         //propiedades del nodo
@@ -45,6 +47,11 @@ namespace pryEDMoya
             set { sig = value; }
         }
 
+        public clsNodo Anterior
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
 
     }
 }

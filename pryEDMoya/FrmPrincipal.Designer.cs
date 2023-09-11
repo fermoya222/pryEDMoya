@@ -133,6 +133,7 @@
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
             this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaDobleToolStripMenuItem.Text = "Lista Doble...";
+            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
             // estructurasNoLinealesToolStripMenuItem
             // 
@@ -182,7 +183,7 @@
             this.repasoDeOperacionesToolStripMenuItem.Size = new System.Drawing.Size(297, 22);
             this.repasoDeOperacionesToolStripMenuItem.Text = "Repaso de operaciones...";
             // 
-            // FrmPrincipal
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +192,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FrmPrincipal";
+            this.Name = "frmPrincipal";
             this.Text = "Estructuras de Datos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);

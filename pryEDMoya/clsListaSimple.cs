@@ -36,19 +36,29 @@ namespace pryEDMoya
                 }
                 else
                 {
-                    clsNodo aux = pri;
-                    clsNodo ant = pri;
-                    while (nuevo.Codigo > aux.Codigo)
+                    if(nuevo.Codigo >= pri.Codigo)
                     {
-                        ant = aux;
-                        aux = aux.Siguiente;
-                        if ( aux == null)
-                        {
-                            break;
-                        }
+                        nuevo.Siguiente = Primero;
+                        Primero.Anterior = nuevo;
+                        Primero = nuevo;
                     }
-                    ant.Siguiente = nuevo;
-                    nuevo.Siguiente = aux;
+                    else
+                    {
+                        clsNodo aux = pri;
+                        clsNodo ant = pri;
+                        while (nuevo.Codigo > aux.Codigo)
+                        {
+                            ant = aux;
+                            aux = aux.Siguiente;
+                            if (aux == null)
+                            {
+                                break;
+                            }
+                        }
+                        ant.Siguiente = nuevo;
+                        nuevo.Siguiente = aux;
+                    }
+                   
                 }
             }
         }
