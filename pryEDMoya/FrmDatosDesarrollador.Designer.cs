@@ -1,6 +1,6 @@
 ﻿namespace pryEDMoya
 {
-    partial class FrmDatosDesarrollador
+    partial class frmDatosDesarrollador
     {
         /// <summary>
         /// Required designer variable.

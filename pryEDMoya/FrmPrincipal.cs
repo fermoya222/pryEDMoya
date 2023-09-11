@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDMoya
 {
-    public partial class FrmPrincipal : Form
+    public partial class frmPrincipal : Form
     {
-        public FrmPrincipal()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace pryEDMoya
 
         private void datosDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDatosDesarrollador v = new FrmDatosDesarrollador();
+            frmDatosDesarrollador v = new frmDatosDesarrollador();
             v.ShowDialog();
 
         }

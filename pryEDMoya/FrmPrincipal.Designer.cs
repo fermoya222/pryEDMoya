@@ -1,6 +1,6 @@
 ﻿namespace pryEDMoya
 {
-    partial class FrmPrincipal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.

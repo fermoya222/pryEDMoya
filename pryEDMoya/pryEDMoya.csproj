@@ -56,11 +56,17 @@
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmDatosDesarrollador.cs">
+    <Compile Include="frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDatosDesarrollador.Designer.cs">
-      <DependentUpon>FrmDatosDesarrollador.cs</DependentUpon>
+    <Compile Include="frmDatosDesarrollador.Designer.cs">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDoble.Designer.cs">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListaSimple.cs">
       <SubType>Form</SubType>
@@ -74,19 +80,22 @@
     <Compile Include="frmPila.Designer.cs">
       <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmDatosDesarrollador.resx">
-      <DependentUpon>FrmDatosDesarrollador.cs</DependentUpon>
+    <EmbeddedResource Include="frmDatosDesarrollador.resx">
+      <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDoble.resx">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaSimple.resx">
       <DependentUpon>frmListaSimple.cs</DependentUpon>
@@ -94,8 +103,8 @@
     <EmbeddedResource Include="frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listar datos.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDMoya
 {
-    public partial class frmDatosDesarrollador : Form
+    public partial class frmListaDoble : Form
     {
-        public frmDatosDesarrollador()
+        public frmListaDoble()
         {
             InitializeComponent();
         }

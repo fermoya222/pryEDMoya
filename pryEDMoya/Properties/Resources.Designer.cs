@@ -133,6 +133,16 @@ namespace pryEDMoya.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap listar_datos {
+            get {
+                object obj = ResourceManager.GetObject("listar datos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pilas {
             get {
                 object obj = ResourceManager.GetObject("pilas", resourceCulture);
