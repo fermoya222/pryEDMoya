@@ -13,6 +13,7 @@ namespace pryEDMoya
         //declaro los campos
         private clsNodo pri;
         private clsNodo ult;
+        private clsNodo ant;
 
         //declaro las propiedades 
         public clsNodo Primero
@@ -27,6 +28,12 @@ namespace pryEDMoya
             set { pri = value; }
         }
 
+        public clsNodo Anterior
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
+
         public void Agregar(clsNodo nuevo)
         {
             if (pri == null)
@@ -36,9 +43,10 @@ namespace pryEDMoya
             }
             else
             {
-                if (nuevo.Codigo <= ult.Codigo)
+                if (nuevo.Codigo < pri.Codigo)
                 {
-                    ult.Siguiente = nuevo;
+                    nuevo.Siguiente = Primero;
+                    pri.Anterior = nuevo;
                     pri = nuevo;
                 }
                 else
@@ -49,18 +57,22 @@ namespace pryEDMoya
                         nuevo.Anterior = ult;
                         ult = nuevo;
                     }
-                    clsNodo aux = pri;
-                    clsNodo ant = pri;
-                    while (aux.Codigo < nuevo.Codigo)
+                    else
                     {
-                        ant = aux;
-                        aux = aux.Siguiente;
+                        clsNodo aux = pri;
+                        clsNodo ant = pri;
+                        while (aux.Codigo < nuevo.Codigo)
+                        {
+                            ant = aux;
+                            aux = aux.Siguiente;
 
+                        }
+                        nuevo.Anterior = ant;
+                        nuevo.Siguiente = aux;
+                        ant.Siguiente = nuevo;
+                        aux.Anterior = nuevo;
                     }
-                    nuevo.Anterior = ant;
-                    nuevo.Siguiente = aux;
-                    ant.Siguiente = nuevo;
-                    aux.Anterior = nuevo;
+                    
                 }
 
 
@@ -125,7 +137,7 @@ namespace pryEDMoya
             Combo.Items.Clear();
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }

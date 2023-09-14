@@ -124,6 +124,7 @@
             this.cmbCodigoLD.Name = "cmbCodigoLD";
             this.cmbCodigoLD.Size = new System.Drawing.Size(121, 21);
             this.cmbCodigoLD.TabIndex = 7;
+            this.cmbCodigoLD.SelectedIndexChanged += new System.EventHandler(this.cmbCodigoLD_SelectedIndexChanged);
             // 
             // btnEliminarLD
             // 
@@ -133,6 +134,7 @@
             this.btnEliminarLD.TabIndex = 6;
             this.btnEliminarLD.Text = "Eliminar";
             this.btnEliminarLD.UseVisualStyleBackColor = true;
+            this.btnEliminarLD.Click += new System.EventHandler(this.btnEliminarLD_Click);
             // 
             // lblCodigo2LD
             // 
@@ -167,6 +169,7 @@
             this.btnAgregarLD.TabIndex = 6;
             this.btnAgregarLD.Text = "Agregar";
             this.btnAgregarLD.UseVisualStyleBackColor = true;
+            this.btnAgregarLD.Click += new System.EventHandler(this.btnAgregarLD_Click);
             // 
             // txtTramiteLD
             // 
@@ -174,6 +177,7 @@
             this.txtTramiteLD.Name = "txtTramiteLD";
             this.txtTramiteLD.Size = new System.Drawing.Size(100, 20);
             this.txtTramiteLD.TabIndex = 5;
+            this.txtTramiteLD.TextChanged += new System.EventHandler(this.txtTramiteLD_TextChanged);
             // 
             // txtNombreLD
             // 
@@ -181,6 +185,7 @@
             this.txtNombreLD.Name = "txtNombreLD";
             this.txtNombreLD.Size = new System.Drawing.Size(100, 20);
             this.txtNombreLD.TabIndex = 4;
+            this.txtNombreLD.TextChanged += new System.EventHandler(this.txtNombreLD_TextChanged);
             // 
             // txtCodigoLD
             // 
@@ -188,6 +193,7 @@
             this.txtCodigoLD.Name = "txtCodigoLD";
             this.txtCodigoLD.Size = new System.Drawing.Size(75, 20);
             this.txtCodigoLD.TabIndex = 3;
+            this.txtCodigoLD.TextChanged += new System.EventHandler(this.txtCodigoLD_TextChanged);
             // 
             // lblTramiteLD
             // 
@@ -248,6 +254,8 @@
             this.rbtnDescendente.TabStop = true;
             this.rbtnDescendente.Text = "Descendente";
             this.rbtnDescendente.UseVisualStyleBackColor = true;
+            this.rbtnDescendente.CheckedChanged += new System.EventHandler(this.rbtnDescendente_CheckedChanged);
+            this.rbtnDescendente.Click += new System.EventHandler(this.rbtnDescendente_Click);
             // 
             // rbtnAscendente
             // 
@@ -259,6 +267,8 @@
             this.rbtnAscendente.TabStop = true;
             this.rbtnAscendente.Text = "Ascendente";
             this.rbtnAscendente.UseVisualStyleBackColor = true;
+            this.rbtnAscendente.CheckedChanged += new System.EventHandler(this.rbtnAscendente_CheckedChanged);
+            this.rbtnAscendente.Click += new System.EventHandler(this.rbtnAscendente_Click);
             // 
             // frmListaDoble
             // 
