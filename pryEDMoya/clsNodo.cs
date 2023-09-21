@@ -18,6 +18,11 @@ namespace pryEDMoya
         private clsNodo ant;
 
 
+        private clsNodo izq;
+        private clsNodo der;
+        private clsNodo raiz;
+
+
         //propiedades del nodo
         public Int32 Codigo
         { 
@@ -53,5 +58,22 @@ namespace pryEDMoya
             set { ant = value; }
         }
 
+        public clsNodo Izquierda
+        {
+            get { return izq; }
+            set { izq = value; }
+        }
+
+        public clsNodo Derecha
+        {
+            get { return der; }
+            set { der = value; }
+        }
+
+        public clsNodo Raiz
+        {
+            get { return raiz; }
+            set { raiz = value; }
+        }
     }
 }

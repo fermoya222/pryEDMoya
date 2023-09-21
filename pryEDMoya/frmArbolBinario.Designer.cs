@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.mrcArbolBinario = new System.Windows.Forms.GroupBox();
+            this.rbtnPost = new System.Windows.Forms.RadioButton();
+            this.rbtnPre = new System.Windows.Forms.RadioButton();
+            this.rbtnIn = new System.Windows.Forms.RadioButton();
             this.dgvArbolBinario = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,10 +49,8 @@
             this.lblNombreAr = new System.Windows.Forms.Label();
             this.lblCodigoAr = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.rbtnIn = new System.Windows.Forms.RadioButton();
-            this.rbtnPre = new System.Windows.Forms.RadioButton();
-            this.rbtnPost = new System.Windows.Forms.RadioButton();
             this.btnEquilibrar = new System.Windows.Forms.Button();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.mrcArbolBinario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.mrcElementoAEliminarAr.SuspendLayout();
@@ -58,6 +59,7 @@
             // 
             // mrcArbolBinario
             // 
+            this.mrcArbolBinario.Controls.Add(this.btnExportar);
             this.mrcArbolBinario.Controls.Add(this.rbtnPost);
             this.mrcArbolBinario.Controls.Add(this.rbtnPre);
             this.mrcArbolBinario.Controls.Add(this.rbtnIn);
@@ -68,6 +70,42 @@
             this.mrcArbolBinario.TabIndex = 16;
             this.mrcArbolBinario.TabStop = false;
             this.mrcArbolBinario.Text = "listado en una Lista y una grilla";
+            // 
+            // rbtnPost
+            // 
+            this.rbtnPost.AutoSize = true;
+            this.rbtnPost.Location = new System.Drawing.Point(22, 78);
+            this.rbtnPost.Name = "rbtnPost";
+            this.rbtnPost.Size = new System.Drawing.Size(78, 17);
+            this.rbtnPost.TabIndex = 19;
+            this.rbtnPost.TabStop = true;
+            this.rbtnPost.Text = "Post-Orden";
+            this.rbtnPost.UseVisualStyleBackColor = true;
+            this.rbtnPost.CheckedChanged += new System.EventHandler(this.rbtnPost_CheckedChanged);
+            // 
+            // rbtnPre
+            // 
+            this.rbtnPre.AutoSize = true;
+            this.rbtnPre.Location = new System.Drawing.Point(22, 55);
+            this.rbtnPre.Name = "rbtnPre";
+            this.rbtnPre.Size = new System.Drawing.Size(73, 17);
+            this.rbtnPre.TabIndex = 19;
+            this.rbtnPre.TabStop = true;
+            this.rbtnPre.Text = "Pre-Orden";
+            this.rbtnPre.UseVisualStyleBackColor = true;
+            this.rbtnPre.CheckedChanged += new System.EventHandler(this.rbtnPre_CheckedChanged);
+            // 
+            // rbtnIn
+            // 
+            this.rbtnIn.AutoSize = true;
+            this.rbtnIn.Location = new System.Drawing.Point(22, 32);
+            this.rbtnIn.Name = "rbtnIn";
+            this.rbtnIn.Size = new System.Drawing.Size(66, 17);
+            this.rbtnIn.TabIndex = 19;
+            this.rbtnIn.TabStop = true;
+            this.rbtnIn.Text = "In-Orden";
+            this.rbtnIn.UseVisualStyleBackColor = true;
+            this.rbtnIn.CheckedChanged += new System.EventHandler(this.rbtnIn_CheckedChanged);
             // 
             // dgvArbolBinario
             // 
@@ -103,7 +141,7 @@
             this.mrcElementoAEliminarAr.Controls.Add(this.lblCodigo2Ar);
             this.mrcElementoAEliminarAr.Location = new System.Drawing.Point(482, 12);
             this.mrcElementoAEliminarAr.Name = "mrcElementoAEliminarAr";
-            this.mrcElementoAEliminarAr.Size = new System.Drawing.Size(234, 121);
+            this.mrcElementoAEliminarAr.Size = new System.Drawing.Size(234, 148);
             this.mrcElementoAEliminarAr.TabIndex = 15;
             this.mrcElementoAEliminarAr.TabStop = false;
             this.mrcElementoAEliminarAr.Text = "Elemento a Eliminar";
@@ -119,9 +157,9 @@
             // 
             // btnEliminarAr
             // 
-            this.btnEliminarAr.Location = new System.Drawing.Point(49, 81);
+            this.btnEliminarAr.Location = new System.Drawing.Point(47, 93);
             this.btnEliminarAr.Name = "btnEliminarAr";
-            this.btnEliminarAr.Size = new System.Drawing.Size(139, 31);
+            this.btnEliminarAr.Size = new System.Drawing.Size(155, 31);
             this.btnEliminarAr.TabIndex = 6;
             this.btnEliminarAr.Text = "Eliminar";
             this.btnEliminarAr.UseVisualStyleBackColor = true;
@@ -159,6 +197,7 @@
             this.btnAgregarAr.TabIndex = 6;
             this.btnAgregarAr.Text = "Agregar";
             this.btnAgregarAr.UseVisualStyleBackColor = true;
+            this.btnAgregarAr.Click += new System.EventHandler(this.btnAgregarAr_Click);
             // 
             // txtTramiteAr
             // 
@@ -215,47 +254,24 @@
             this.treeView1.Size = new System.Drawing.Size(223, 221);
             this.treeView1.TabIndex = 18;
             // 
-            // rbtnIn
-            // 
-            this.rbtnIn.AutoSize = true;
-            this.rbtnIn.Location = new System.Drawing.Point(22, 56);
-            this.rbtnIn.Name = "rbtnIn";
-            this.rbtnIn.Size = new System.Drawing.Size(66, 17);
-            this.rbtnIn.TabIndex = 19;
-            this.rbtnIn.TabStop = true;
-            this.rbtnIn.Text = "In-Orden";
-            this.rbtnIn.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPre
-            // 
-            this.rbtnPre.AutoSize = true;
-            this.rbtnPre.Location = new System.Drawing.Point(22, 100);
-            this.rbtnPre.Name = "rbtnPre";
-            this.rbtnPre.Size = new System.Drawing.Size(73, 17);
-            this.rbtnPre.TabIndex = 19;
-            this.rbtnPre.TabStop = true;
-            this.rbtnPre.Text = "Pre-Orden";
-            this.rbtnPre.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPost
-            // 
-            this.rbtnPost.AutoSize = true;
-            this.rbtnPost.Location = new System.Drawing.Point(22, 144);
-            this.rbtnPost.Name = "rbtnPost";
-            this.rbtnPost.Size = new System.Drawing.Size(78, 17);
-            this.rbtnPost.TabIndex = 19;
-            this.rbtnPost.TabStop = true;
-            this.rbtnPost.Text = "Post-Orden";
-            this.rbtnPost.UseVisualStyleBackColor = true;
-            // 
             // btnEquilibrar
             // 
-            this.btnEquilibrar.Location = new System.Drawing.Point(529, 176);
+            this.btnEquilibrar.Location = new System.Drawing.Point(529, 186);
             this.btnEquilibrar.Name = "btnEquilibrar";
-            this.btnEquilibrar.Size = new System.Drawing.Size(154, 39);
+            this.btnEquilibrar.Size = new System.Drawing.Size(155, 30);
             this.btnEquilibrar.TabIndex = 19;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(36, 119);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(147, 31);
+            this.btnExportar.TabIndex = 20;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // frmArbolBinario
             // 
@@ -304,5 +320,6 @@
         private System.Windows.Forms.RadioButton rbtnIn;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button btnEquilibrar;
+        private System.Windows.Forms.Button btnExportar;
     }
 }
