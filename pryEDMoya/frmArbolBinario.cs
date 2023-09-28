@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace pryEDMoya
 {
@@ -59,7 +60,51 @@ namespace pryEDMoya
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
+            if(rbtnIn.Checked)
+            {
+                Arbol.ExportarIn(dgvArbolBinario);
+            }
+            else
+            {
+                if (rbtnPre.Checked)
+                {
+                    Arbol.ExportarPre(dgvArbolBinario);
+                }
+                else
+                {
+                    if (rbtnPost.Checked)
+                    {
+                        Arbol.ExportarPost(dgvArbolBinario);
+                    }
+                }
+            }
+        }
 
+        private void frmArbolBinario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarAr_Click(object sender, EventArgs e)
+        {
+            Arbol.Eliminar(Convert.ToInt32(cmbCodigoAr.Text));
+            Arbol.Recorrer(dgvArbolBinario);
+            Arbol.Recorrer(treeView1);
+            Arbol.Recorrer(cmbCodigoAr);
+            btnEliminarAr.Enabled = false;
+        }
+
+        private void txtTramiteAr_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCodigoAr.Text != null && txtNombreAr.Text != null && txtTramiteAr.Text != null)
+            {
+                btnAgregarAr.Enabled = true;
+            }
+        }
+
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            Arbol.Equilibrar();
         }
     }
 }

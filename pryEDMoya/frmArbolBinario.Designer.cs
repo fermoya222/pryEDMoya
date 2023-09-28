@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.mrcArbolBinario = new System.Windows.Forms.GroupBox();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.rbtnPost = new System.Windows.Forms.RadioButton();
             this.rbtnPre = new System.Windows.Forms.RadioButton();
             this.rbtnIn = new System.Windows.Forms.RadioButton();
@@ -50,7 +51,6 @@
             this.lblCodigoAr = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.btnEquilibrar = new System.Windows.Forms.Button();
-            this.btnExportar = new System.Windows.Forms.Button();
             this.mrcArbolBinario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.mrcElementoAEliminarAr.SuspendLayout();
@@ -70,6 +70,16 @@
             this.mrcArbolBinario.TabIndex = 16;
             this.mrcArbolBinario.TabStop = false;
             this.mrcArbolBinario.Text = "listado en una Lista y una grilla";
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(36, 119);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(147, 31);
+            this.btnExportar.TabIndex = 20;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // rbtnPost
             // 
@@ -163,6 +173,7 @@
             this.btnEliminarAr.TabIndex = 6;
             this.btnEliminarAr.Text = "Eliminar";
             this.btnEliminarAr.UseVisualStyleBackColor = true;
+            this.btnEliminarAr.Click += new System.EventHandler(this.btnEliminarAr_Click);
             // 
             // lblCodigo2Ar
             // 
@@ -205,6 +216,7 @@
             this.txtTramiteAr.Name = "txtTramiteAr";
             this.txtTramiteAr.Size = new System.Drawing.Size(100, 20);
             this.txtTramiteAr.TabIndex = 5;
+            this.txtTramiteAr.TextChanged += new System.EventHandler(this.txtTramiteAr_TextChanged);
             // 
             // txtNombreAr
             // 
@@ -262,16 +274,7 @@
             this.btnEquilibrar.TabIndex = 19;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
-            // 
-            // btnExportar
-            // 
-            this.btnExportar.Location = new System.Drawing.Point(36, 119);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(147, 31);
-            this.btnExportar.TabIndex = 20;
-            this.btnExportar.Text = "Exportar";
-            this.btnExportar.UseVisualStyleBackColor = true;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            this.btnEquilibrar.Click += new System.EventHandler(this.btnEquilibrar_Click);
             // 
             // frmArbolBinario
             // 
@@ -286,6 +289,7 @@
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructuras Ramificadas - Árbol Binario";
+            this.Load += new System.EventHandler(this.frmArbolBinario_Load);
             this.mrcArbolBinario.ResumeLayout(false);
             this.mrcArbolBinario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).EndInit();
