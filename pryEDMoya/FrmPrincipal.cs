@@ -59,5 +59,23 @@ namespace pryEDMoya
             frmArbolBinario v = new frmArbolBinario();
             v.ShowDialog();
         }
+
+        private void operacionesConTablasDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDatos v = new frmBaseDatos();
+            v.ShowDialog();
+        }
+
+        private void consultasEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSQL v = new frmConsultaSQL();
+            v.ShowDialog();
+        }
+
+        private void repasoDeOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRepaso v = new frmRepaso();
+            v.ShowDialog();
+        }
     }
 }

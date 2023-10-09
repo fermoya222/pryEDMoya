@@ -16,11 +16,16 @@ namespace pryEDMoya
         {
             InitializeComponent();
         }
-
+        
         private void btnListar_Click(object sender, EventArgs e)
         {
             clsBaseDatos objBaseDatos = new clsBaseDatos();
-            objBaseDatos.Listar = 
+            objBaseDatos.Listar(dgvDatos, txtSql.Text);
+
+        }
+
+        private void frmConsultaSQL_Load(object sender, EventArgs e)
+        {
 
         }
     }
