@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbConsulta = new System.Windows.Forms.ComboBox();
             this.btnListar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblEnunciado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,14 +45,25 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Operacion a realizar en las base de datos:";
             // 
-            // comboBox1
+            // cmbConsulta
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(223, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(382, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbConsulta.FormattingEnabled = true;
+            this.cmbConsulta.Items.AddRange(new object[] {
+            "Diferencia ",
+            "Intersecion",
+            "Juntar",
+            "Proyeccion Simple",
+            "Proyeccion Multiatributo",
+            "Seleccion Multiatributo con operador AND",
+            "Seleccion Multiatributo con operador OR",
+            "Seleccion Multiatributo por convulación",
+            "Seleccion Simple",
+            "Unión"});
+            this.cmbConsulta.Location = new System.Drawing.Point(223, 32);
+            this.cmbConsulta.Name = "cmbConsulta";
+            this.cmbConsulta.Size = new System.Drawing.Size(382, 21);
+            this.cmbConsulta.TabIndex = 1;
+            this.cmbConsulta.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnListar
             // 
@@ -62,14 +73,7 @@
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 68);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(703, 109);
-            this.textBox1.TabIndex = 3;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dataGridView1
             // 
@@ -79,15 +83,24 @@
             this.dataGridView1.Size = new System.Drawing.Size(703, 246);
             this.dataGridView1.TabIndex = 4;
             // 
+            // lblEnunciado
+            // 
+            this.lblEnunciado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblEnunciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnunciado.Location = new System.Drawing.Point(12, 66);
+            this.lblEnunciado.Name = "lblEnunciado";
+            this.lblEnunciado.Size = new System.Drawing.Size(703, 109);
+            this.lblEnunciado.TabIndex = 9;
+            // 
             // frmRepaso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 450);
+            this.Controls.Add(this.lblEnunciado);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbConsulta);
             this.Controls.Add(this.label1);
             this.Name = "frmRepaso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -101,9 +114,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbConsulta;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblEnunciado;
     }
 }
