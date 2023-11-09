@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbConsulta = new System.Windows.Forms.ComboBox();
             this.btnListar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListado = new System.Windows.Forms.DataGridView();
             this.lblEnunciado = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,13 +75,13 @@
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // dataGridView1
+            // dgvListado
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 192);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(703, 246);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListado.Location = new System.Drawing.Point(12, 192);
+            this.dgvListado.Name = "dgvListado";
+            this.dgvListado.Size = new System.Drawing.Size(703, 246);
+            this.dgvListado.TabIndex = 4;
             // 
             // lblEnunciado
             // 
@@ -98,14 +98,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 450);
             this.Controls.Add(this.lblEnunciado);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.cmbConsulta);
             this.Controls.Add(this.label1);
             this.Name = "frmRepaso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRepaso";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmRepaso_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +117,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbConsulta;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListado;
         private System.Windows.Forms.Label lblEnunciado;
     }
 }
